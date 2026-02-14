@@ -25,7 +25,6 @@
             line-height: 1.6;
         }
 
-        /* --- Navigation --- */
         nav {
             position: fixed;
             top: 0;
@@ -50,7 +49,6 @@
 
         nav a:hover { color: var(--accent); }
 
-        /* --- Hero Section --- */
         .hero {
             padding: 150px 20px 80px;
             text-align: center;
@@ -70,7 +68,6 @@
         .hero h1 { font-size: 3rem; margin: 10px 0; }
         .hero p { color: var(--accent); font-size: 1.3rem; margin-bottom: 30px; }
 
-        /* --- Social & Call Section --- */
         .social-links {
             display: flex;
             justify-content: center;
@@ -92,17 +89,15 @@
         .btn-linkedin { background: #0077b5; color: white; }
         .btn-github { background: #333; color: white; }
         .btn-resume { border: 2px solid var(--accent); color: var(--accent); }
+
         .btn-social:hover { opacity: 0.8; transform: translateY(-3px); }
 
-        /* --- Content Layout --- */
         .container { max-width: 1100px; margin: 0 auto; padding: 80px 20px; }
         .section-title { border-left: 4px solid var(--accent); padding-left: 15px; margin-bottom: 40px; font-size: 2rem; }
 
-        /* --- Grid Layouts --- */
         .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; }
         .card { background: var(--card-bg); padding: 2rem; border-radius: 12px; border: 1px solid #334155; }
 
-        /* --- Skills Section --- */
         .skill-tag {
             display: inline-block;
             background: #334155;
@@ -112,110 +107,117 @@
             font-size: 0.9rem;
         }
 
-        /* --- Contact --- */
         #contact { text-align: center; background: #1e293b; border-radius: 15px; padding: 50px; }
 
         footer { text-align: center; padding: 40px; color: var(--text-dim); font-size: 0.8rem; }
 
         @media (max-width: 768px) {
-            nav { display: none; } /* Simplified for mobile */
+            nav { display: none; }
             .hero h1 { font-size: 2rem; }
         }
     </style>
 </head>
 <body>
 
-    <nav>
-        <a href="#home">HOME</a>
-        <a href="#skills">SKILLS</a>
-        <a href="#projects">PROJECTS</a>
-        <a href="#experience">TRAINING & EDU</a>
-        <a href="#certificates">CERTIFICATES</a>
-        <a href="#contact">CONTACT</a>
-    </nav>
+<nav>
+    <a href="#home">HOME</a>
+    <a href="#skills">SKILLS</a>
+    <a href="#projects">PROJECTS</a>
+    <a href="#experience">TRAINING & EDU</a>
+    <a href="#certificates">CERTIFICATES</a>
+    <a href="#contact">CONTACT</a>
+</nav>
 
-    <header class="hero" id="home">
-        <img src="WhatsApp Image 2026-02-13 at 17.53.19.jpeg">
-        <h1>Hi, I'm Shahid Ansari </h1>
-        <p>Machine Learning Engineer • Computer Vision • NLP</p>
-        
-        <div class="social-links">
-            <a href="https://linkedin.com/in/yourprofile" class="btn-social btn-linkedin"><i class="fab fa-linkedin"></i> LinkedIn</a>
-            <a href="https://github.com/yourusername" class="btn-social btn-github"><i class="fab fa-github"></i> GitHub</a>
-            <a href="resume.pdf" class="btn-social btn-resume"><i class="fas fa-file-pdf"></i> Resume</a>
-        </div>
-    </header>
+<header class="hero" id="home">
+    <img src="WhatsApp Image 2026-02-13 at 17.53.19.jpeg" class="profile-img">
+    <h1>Hi, I'm Shahid Ansari</h1>
+    <p>Machine Learning Engineer • Computer Vision • NLP</p>
 
-    <div class="container" id="skills">
-        <h2 class="section-title">Technical Skills</h2>
+    <div class="social-links">
+        <a href="https://www.linkedin.com/in/shahidansari4b9148297/" class="btn-social btn-linkedin">
+            <i class="fab fa-linkedin"></i> LinkedIn
+        </a>
+        <a href="https://github.com/Shahid332005" class="btn-social btn-github">
+            <i class="fab fa-github"></i> GitHub
+        </a>
+        <a href="resume.pdf" class="btn-social btn-resume">
+            <i class="fas fa-file-pdf"></i> Resume
+        </a>
+    </div>
+</header>
+
+<div class="container" id="skills">
+    <h2 class="section-title">Technical Skills</h2>
+    <div class="card">
+        <h3 style="color: var(--accent);">Languages & Frameworks</h3>
+        <span class="skill-tag">Python</span>
+        <span class="skill-tag">PyTorch</span>
+        <span class="skill-tag">TensorFlow</span>
+        <span class="skill-tag">Scikit-Learn</span>
+        <span class="skill-tag">LangChain</span>
+        <span class="skill-tag">FastAPI</span>
+    </div>
+</div>
+
+<div class="container" id="projects">
+    <h2 class="section-title">Projects</h2>
+    <div class="grid">
         <div class="card">
-            <div class="skill-category">
-                <h3 style="color: var(--accent);">Languages & Frameworks</h3>
-                <span class="skill-tag">Python</span> <span class="skill-tag">PyTorch</span> 
-                <span class="skill-tag">TensorFlow</span> <span class="skill-tag">Scikit-Learn</span>
-                <span class="skill-tag">LangChain</span> <span class="skill-tag">FastAPI</span>
-            </div>
+            <h3>Smart Water Usage Pattern Detection</h3>
+            <p>ML-based system for detecting anomalies and optimizing water consumption patterns.</p>
+            <a href="https://github.com/Shahid332005/-Smart-Water-Usage-Pattern-Detection-and-Anomaly-Resolution"
+               style="color: var(--accent); text-decoration: none;">View Project →</a>
+        </div>
+
+        <div class="card">
+            <h3>India Restaurant Finder</h3>
+            <p>Location-based application to discover restaurants with a user-friendly interface.</p>
+            <a href="https://github.com/Shahid332005/India-Restaurant-Finder"
+               style="color: var(--accent); text-decoration: none;">View Project →</a>
         </div>
     </div>
+</div>
 
-    <div class="container" id="projects">
-        <h2 class="section-title">Projects</h2>
-        <div class="grid">
-            <div class="card">
-                <h3>SAR-Based Precision Agriculture</h3>
-                <p>Developing AI models for satellite imagery analysis to optimize crop yields.</p>
-                <a href="#" style="color: var(--accent); text-decoration: none;">Case Study →</a>
-            </div>
-            <div class="card">
-                <h3>LLM Deployment Pipeline</h3>
-                <p>Automated MLOps pipeline for fine-tuning and serving Llama models.</p>
-                <a href="#" style="color: var(--accent); text-decoration: none;">View Repo →</a>
-            </div>
+<div class="container" id="experience">
+    <h2 class="section-title">Training & Education</h2>
+    <div class="grid">
+        <div class="card">
+            <h4>Bachelor of Technology (B.Tech) – Information Technology</h4>
+            <p style="color: var(--accent);">Lovely Professional University | 2023 – 2027</p>
+            <p>Coursework includes Machine Learning, Artificial Intelligence, and Software Development.</p>
+        </div>
+
+        <div class="card">
+            <h4>Industry Training / Certification</h4>
+            <p style="color: var(--accent);">DeepLearning.AI | 2025</p>
+            <p>Completed coursework in Generative AI and Large Language Models (LLMs).</p>
         </div>
     </div>
+</div>
 
-    <div class="container" id="experience">
-        <h2 class="section-title">Training & Education</h2>
-        <div class="grid">
-            <div class="card">
-                <h4>Degree Name</h4>
-                <p style="color: var(--accent);">University Name | 2020 - 2024</p>
-                <p>Specialization in Artificial Intelligence and Data Science.</p>
-            </div>
-            <div class="card">
-                <h4>Industry Training</h4>
-                <p style="color: var(--accent);">DeepLearning.AI | 2025</p>
-                <p>Advanced specialization in Generative AI and LLM Orchestration.</p>
-            </div>
+<div class="container" id="certificates">
+    <h2 class="section-title">Certificates</h2>
+    <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));">
+        <div class="card" style="text-align: center;">
+            <i class="fas fa-certificate" style="font-size: 2rem; color: var(--accent);"></i>
+            <p>AWS Certified Machine Learning</p>
+        </div>
+        <div class="card" style="text-align: center;">
+            <i class="fas fa-certificate" style="font-size: 2rem; color: var(--accent);"></i>
+            <p>Google Professional ML Engineer</p>
         </div>
     </div>
+</div>
 
-    <div class="container" id="certificates">
-        <h2 class="section-title">Certificates</h2>
-        <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));">
-            <div class="card" style="text-align: center;">
-                <i class="fas fa-certificate" style="font-size: 2rem; color: var(--accent);"></i>
-                <p>AWS Certified Machine Learning</p>
-            </div>
-            <div class="card" style="text-align: center;">
-                <i class="fas fa-certificate" style="font-size: 2rem; color: var(--accent);"></i>
-                <p>Google Professional ML Engineer</p>
-            </div>
-        </div>
-    </div>
+<div class="container" id="contact">
+    <h2 style="margin-top: 0;">Get In Touch</h2>
+    <p>Currently open to ML Engineering opportunities and collaborations.</p>
+    <p style="font-size: 1.5rem; color: var(--accent);">youremail@example.com</p>
+</div>
 
-    <div class="container" id="contact">
-        <h2 style="margin-top: 0;">Get In Touch</h2>
-        <p>Currently open to ML Engineering opportunities and collaborations.</p>
-        <p style="font-size: 1.5rem; color: var(--accent);">youremail@example.com</p>
-        <div class="social-links" style="margin-top: 30px;">
-            <a href="tel:+1234567890" class="btn-social" style="background: var(--accent); color: #000;"><i class="fas fa-phone"></i> Call Me</a>
-        </div>
-    </div>
-
-    <footer>
-        <p>&copy; 2026 [Your Name]. All Rights Reserved.</p>
-    </footer>
+<footer>
+    <p>&copy; 2026 Shahid Ansari. All Rights Reserved.</p>
+</footer>
 
 </body>
 </html>
